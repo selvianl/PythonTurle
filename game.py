@@ -1,4 +1,3 @@
-
 import turtle
 import random
 score=0
@@ -312,12 +311,12 @@ def update():
       print("Game completed.")
       drawer.goto(0,0)
       drawer.color("dark blue")
-      drawer.write("              VİCTORY!!\n LEFT LİFE = {} | SCORE = {}".format(life, score),align="center", font=("Comic Sans Ms", 25, "normal"))
+      drawer.write("              VCTORY!!\n LEFT LFE = {} | SCORE = {}".format(life, score),align="center", font=("Comic Sans Ms", 25, "normal"))
    elif (life==0):
          print("Game completed.")
          drawer.goto(0,0)
          drawer.color("red")
-         drawer.write("              DEFEAT!!!\n LEFT LİFE = {} | SCORE = {}".format(life, score),align="center",font=("Comic Sans Ms", 25, "normal"))
+         drawer.write("              DEFEAT!!!\n LEFT LFE = {} | SCORE = {}".format(life, score),align="center",font=("Comic Sans Ms", 25, "normal"))
    elif not(play):
         print("Game pause")
         drawer.goto(0,0)
@@ -337,4 +336,4 @@ init_game()  # fill items, walls etc.
 update()     # start game
 
 wn.listen()  # listen events on this window
-wn.mainloop()   # keep the window open
+turtle.mainloop()   # keep the window open
